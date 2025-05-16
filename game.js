@@ -26,6 +26,12 @@ document.addEventListener('DOMContentLoaded', () => {
     const progressBar = document.getElementById('progress-bar');
     const ambulance = document.getElementById('ambulance');
     const progressContainer = document.getElementById('progress-container');
+    
+    // Add matching question type elements
+    const matching = document.getElementById('matching');
+    const matchingOptionsContainer = document.getElementById('matching-options-container');
+    const matchingSituationsContainer = document.getElementById('matching-situations-container');
+    const submitMatching = document.getElementById('submit-matching');
 
     // Create submit button for multiple choice questions
     const submitMultipleChoice = document.createElement('button');
@@ -188,6 +194,7 @@ document.addEventListener('DOMContentLoaded', () => {
         multipleChoice.classList.add('hidden');
         selectAll.classList.add('hidden');
         fillInBlank.classList.add('hidden');
+        matching.classList.add('hidden');
         
         // Display the question based on its type
         switch (question.type) {
@@ -199,6 +206,9 @@ document.addEventListener('DOMContentLoaded', () => {
                 break;
             case 'fill-in-blank':
                 displayFillInBlank(question);
+                break;
+            case 'matching':
+                displayMatching(question);
                 break;
         }
     }
@@ -275,6 +285,215 @@ document.addEventListener('DOMContentLoaded', () => {
                 checkFillInBlankAnswer();
             }
         });
+    }
+
+    // Display matching question
+    function displayMatching(question) {
+        matching.classList.remove('hidden');
+        matchingOptionsContainer.innerHTML = '';
+        matchingSituationsContainer.innerHTML = '';
+        
+        // Create the options container (left side)
+        const optionsDiv = document.createElement('div');
+        optionsDiv.classList.add('matching-column');
+        
+        // Create the situations container (right side)
+        const situationsDiv = document.createElement('div');
+        situationsDiv.classList.add('matching-column');
+        
+        // Create a container for the selected pairs
+        const pairsContainer = document.createElement('div');
+        pairsContainer.id = 'matching-pairs-container';
+        pairsContainer.classList.add('matching-pairs');
+        
+        // Create option elements (left side)
+        question.options.forEach((option, index) => {
+            const optionElement = document.createElement('div');
+            optionElement.classList.add('matching-option');
+            optionElement.textContent = option;
+            optionElement.dataset.option = option;
+            optionElement.dataset.selected = 'false';
+            
+            optionElement.addEventListener('click', function() {
+                // Reset all options selection state
+                document.querySelectorAll('.matching-option').forEach(opt => {
+                    opt.classList.remove('selected');
+                    opt.dataset.selected = 'false';
+                });
+                
+                // Select this option
+                this.classList.add('selected');
+                this.dataset.selected = 'true';
+                
+                // Check if a situation is also selected
+                const selectedSituation = document.querySelector('.matching-situation[data-selected="true"]');
+                if (selectedSituation) {
+                    // Create a pair
+                    addMatchingPair(this.dataset.option, selectedSituation.dataset.situation);
+                    
+                    // Reset selections
+                    this.classList.remove('selected');
+                    this.dataset.selected = 'false';
+                    selectedSituation.classList.remove('selected');
+                    selectedSituation.dataset.selected = 'false';
+                }
+            });
+            
+            optionsDiv.appendChild(optionElement);
+        });
+        
+        // Create situation elements (right side)
+        question.situations.forEach((situation, index) => {
+            const situationElement = document.createElement('div');
+            situationElement.classList.add('matching-situation');
+            situationElement.textContent = situation;
+            situationElement.dataset.situation = situation;
+            situationElement.dataset.selected = 'false';
+            
+            situationElement.addEventListener('click', function() {
+                // Reset all situations selection state
+                document.querySelectorAll('.matching-situation').forEach(sit => {
+                    sit.classList.remove('selected');
+                    sit.dataset.selected = 'false';
+                });
+                
+                // Select this situation
+                this.classList.add('selected');
+                this.dataset.selected = 'true';
+                
+                // Check if an option is also selected
+                const selectedOption = document.querySelector('.matching-option[data-selected="true"]');
+                if (selectedOption) {
+                    // Create a pair
+                    addMatchingPair(selectedOption.dataset.option, this.dataset.situation);
+                    
+                    // Reset selections
+                    this.classList.remove('selected');
+                    this.dataset.selected = 'false';
+                    selectedOption.classList.remove('selected');
+                    selectedOption.dataset.selected = 'false';
+                }
+            });
+            
+            situationsDiv.appendChild(situationElement);
+        });
+        
+        // Add the columns to the containers
+        matchingOptionsContainer.appendChild(optionsDiv);
+        matchingSituationsContainer.appendChild(situationsDiv);
+        
+        // Add the pairs container
+        matching.appendChild(pairsContainer);
+        
+        // Function to add a matching pair
+        function addMatchingPair(option, situation) {
+            // Check if the pair already exists
+            const existingPairs = document.querySelectorAll('.matching-pair');
+            for (const pair of existingPairs) {
+                if (pair.dataset.option === option || pair.dataset.situation === situation) {
+                    // Remove the existing pair if either the option or situation is being reused
+                    pair.remove();
+                }
+            }
+            
+            // Create the pair element
+            const pairElement = document.createElement('div');
+            pairElement.classList.add('matching-pair');
+            pairElement.dataset.option = option;
+            pairElement.dataset.situation = situation;
+            
+            // Create option part
+            const optionPart = document.createElement('div');
+            optionPart.classList.add('pair-option');
+            optionPart.textContent = option;
+            
+            // Create arrow
+            const arrow = document.createElement('div');
+            arrow.classList.add('pair-arrow');
+            arrow.textContent = '→';
+            
+            // Create situation part
+            const situationPart = document.createElement('div');
+            situationPart.classList.add('pair-situation');
+            situationPart.textContent = situation;
+            
+            // Create remove button
+            const removeButton = document.createElement('button');
+            removeButton.classList.add('pair-remove');
+            removeButton.innerHTML = '&times;';
+            removeButton.addEventListener('click', function() {
+                pairElement.remove();
+            });
+            
+            // Add parts to the pair element
+            pairElement.appendChild(optionPart);
+            pairElement.appendChild(arrow);
+            pairElement.appendChild(situationPart);
+            pairElement.appendChild(removeButton);
+            
+            // Add the pair to the container
+            pairsContainer.appendChild(pairElement);
+        }
+        
+        // Add submit button
+        if (!submitMatching.parentNode) {
+            matching.appendChild(submitMatching);
+        }
+        
+        // Add event listener for submit button
+        submitMatching.onclick = checkMatchingAnswer;
+    }
+    
+    // Check matching answer
+    function checkMatchingAnswer() {
+        const question = currentQuestions.questions[currentQuestionIndex];
+        const pairs = document.querySelectorAll('.matching-pair');
+        
+        // If not all pairs have been created, don't check yet
+        if (pairs.length < question.correctPairs.length) {
+            alert("Please match all options with their situations.");
+            return;
+        }
+        
+        // Check if all pairs are correct
+        let isCorrect = true;
+        for (const pair of pairs) {
+            const option = pair.dataset.option;
+            const situation = pair.dataset.situation;
+            
+            // Find if this pair is in the correct pairs
+            const correctPair = question.correctPairs.find(cp => 
+                cp.option === option && cp.situation === situation
+            );
+            
+            if (!correctPair) {
+                isCorrect = false;
+                break;
+            }
+        }
+        
+        // Update the score
+        if (isCorrect) {
+            // Scoring based on difficulty (Easy = 1 point, Medium = 2 points, Hard = 3 points)
+            const pointValue = question.difficulty === 'Easy' ? 1 : (question.difficulty === 'Medium' ? 2 : 3);
+            score += pointValue;
+            scoreDisplay.textContent = `Score: ${score}`;
+            correctAnswers++;
+            
+            // Update consecutive counters
+            consecutiveCorrect++;
+            consecutiveWrong = 0;
+        } else {
+            // Update consecutive counters
+            consecutiveCorrect = 0;
+            consecutiveWrong++;
+        }
+        
+        // Show feedback
+        showFeedback(isCorrect, question.explanation);
+        
+        // Update progress
+        updateProgress();
     }
 
     // Check multiple choice answer

@@ -75,24 +75,22 @@ const questionBank = [
     {
         drug: "Atropine",
         difficulty: "Medium",
-        type: "term-matching",
-        scenario: "Match the clinical situation with the appropriate atropine dosing:",
-        terms: [
-            "Adult symptomatic bradycardia",
-            "Maximum total adult atropine dose",
-            "Pediatric bradycardia dose"
+        type: "select-all",
+        scenario: "Select all correct statements about atropine dosing in emergency situations:",
+        options: [
+            "Adult symptomatic bradycardia dose is 1 mg IV push",
+            "Adult symptomatic bradycardia dose is 0.5 mg IV push",
+            "Maximum total adult atropine dose is 3 mg",
+            "Maximum total adult atropine dose is 6 mg",
+            "Pediatric bradycardia dose is 0.02 mg/kg (0.1 mg minimum, 1 mg maximum)",
+            "Pediatric bradycardia dose is 0.01 mg/kg (no minimum or maximum)"
         ],
-        definitions: [
-            "0.02 mg/kg (0.1 mg minimum, 1 mg maximum)",
-            "1 mg IV push",
-            "3 mg"
+        correctAnswers: [
+            "Adult symptomatic bradycardia dose is 1 mg IV push",
+            "Maximum total adult atropine dose is 3 mg",
+            "Pediatric bradycardia dose is 0.02 mg/kg (0.1 mg minimum, 1 mg maximum)"
         ],
-        matches: {
-            "Adult symptomatic bradycardia": "1 mg IV push",
-            "Maximum total adult atropine dose": "3 mg",
-            "Pediatric bradycardia dose": "0.02 mg/kg (0.1 mg minimum, 1 mg maximum)"
-        },
-        explanation: "Atropine doses vary by indication: 1 mg for adult bradycardia (up to 3 mg total), and weight-based dosing for pediatrics."
+        explanation: "Atropine doses vary by indication: 1 mg for adult bradycardia (up to 3 mg total), and weight-based dosing for pediatrics at 0.02 mg/kg with minimum and maximum limits."
     },
 
     // Dextrose Questions
@@ -158,24 +156,50 @@ const questionBank = [
     {
         drug: "Fentanyl",
         difficulty: "Easy",
-        type: "term-matching",
+        type: "matching",
         scenario: "Match the fentanyl doses with their clinical situations:",
-        terms: [
-            "Standard adult dose for pain",
-            "Maximum adult total dose",
-            "Pediatric dose calculation"
+        options: [
+            "25-50 mcg IV/IO",
+            "50-100 mcg IV/IO",
+            "1-2 mcg/kg IV/IO",
+            "3-4 mcg/kg IN"
         ],
-        definitions: [
-            "1-4 mcg/kg",
-            "25-100 mcg slow IV/IO/IM/IN",
-            "200 mcg"
+        situations: [
+            "Minor pain in hemodynamically stable adults",
+            "Severe pain or trauma in adults",
+            "Pediatric pain management (IV/IO route)",
+            "Pediatric pain when no IV access available"
         ],
-        matches: {
-            "Standard adult dose for pain": "25-100 mcg slow IV/IO/IM/IN",
-            "Maximum adult total dose": "200 mcg",
-            "Pediatric dose calculation": "1-4 mcg/kg"
-        },
-        explanation: "Fentanyl dosing: 25-100 mcg for adults with a maximum of 200 mcg; pediatric dosing is weight-based at 1-4 mcg/kg."
+        correctPairs: [
+            { option: "25-50 mcg IV/IO", situation: "Minor pain in hemodynamically stable adults" },
+            { option: "50-100 mcg IV/IO", situation: "Severe pain or trauma in adults" },
+            { option: "1-2 mcg/kg IV/IO", situation: "Pediatric pain management (IV/IO route)" },
+            { option: "3-4 mcg/kg IN", situation: "Pediatric pain when no IV access available" }
+        ],
+        explanation: "Fentanyl dosing varies based on patient age, pain severity, and administration route. Lower doses (25-50 mcg) for stable adults with minor pain, higher doses (50-100 mcg) for severe pain, weight-based dosing for pediatrics with IV/IO (1-2 mcg/kg) or intranasal (3-4 mcg/kg) routes."
+    },
+    {
+        drug: "Fentanyl",
+        difficulty: "Medium",
+        type: "multiple-choice",
+        scenario: "What is the maximum recommended total adult dose of fentanyl in the prehospital setting?",
+        options: [
+            "200 mcg",
+            "300 mcg",
+            "100 mcg",
+            "500 mcg"
+        ],
+        correctAnswer: "200 mcg",
+        explanation: "The maximum total adult dose of fentanyl in the prehospital setting is typically 200 mcg to avoid adverse effects."
+    },
+    {
+        drug: "Fentanyl",
+        difficulty: "Hard",
+        type: "fill-in-blank",
+        scenario: "For pediatric patients, fentanyl dosing is weight-based. What is the appropriate dose range in mcg/kg?",
+        correctAnswer: "1-4",
+        acceptableAnswers: ["1-4", "1-4 mcg/kg", "1 to 4", "1 to 4 mcg/kg", "1-4mcg/kg"],
+        explanation: "Pediatric fentanyl dosing is weight-based at 1-4 mcg/kg, carefully titrated to effect."
     },
 
     // Glucagon Questions
@@ -268,24 +292,22 @@ const questionBank = [
     {
         drug: "Sodium Bicarbonate",
         difficulty: "Hard",
-        type: "term-matching",
-        scenario: "Match the sodium bicarbonate indications with their rationales:",
-        terms: [
-            "TCA overdose",
-            "Hyperkalemic arrest",
-            "Prolonged cardiac arrest"
+        type: "select-all",
+        scenario: "Select all correct pairings of sodium bicarbonate indications with their rationales:",
+        options: [
+            "TCA overdose - Narrows wide QRS complexes through alkalinization",
+            "TCA overdose - Shifts potassium into cells temporarily",
+            "Hyperkalemic arrest - Shifts potassium into cells temporarily",
+            "Hyperkalemic arrest - Narrows wide QRS complexes through alkalinization",
+            "Prolonged cardiac arrest - May help with severe acidosis after extended resuscitation",
+            "Prolonged cardiac arrest - Increases effectiveness of vasopressors"
         ],
-        definitions: [
-            "May help with severe acidosis after extended resuscitation",
-            "Narrows wide QRS complexes through alkalinization",
-            "Shifts potassium into cells temporarily"
+        correctAnswers: [
+            "TCA overdose - Narrows wide QRS complexes through alkalinization",
+            "Hyperkalemic arrest - Shifts potassium into cells temporarily",
+            "Prolonged cardiac arrest - May help with severe acidosis after extended resuscitation"
         ],
-        matches: {
-            "TCA overdose": "Narrows wide QRS complexes through alkalinization",
-            "Hyperkalemic arrest": "Shifts potassium into cells temporarily",
-            "Prolonged cardiac arrest": "May help with severe acidosis after extended resuscitation"
-        },
-        explanation: "Sodium bicarbonate has multiple uses: it narrows QRS in TCA overdose, shifts potassium in hyperkalemia, and may help with acidosis during prolonged resuscitation."
+        explanation: "Sodium bicarbonate has multiple uses: it narrows QRS in TCA overdose through alkalinization, shifts potassium into cells in hyperkalemia, and may help with acidosis during prolonged resuscitation."
     },
 
     // Scenario-based mixed questions
