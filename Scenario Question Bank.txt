@@ -1,0 +1,203 @@
+Scenario Question Bank
+
+Quick-Start Overview
+This file scaffolds three progressive, real-world scenario questions—Easy, Medium, Hard—for every drug on your EMT-Intermediate pharmacology list. Each row supplies:
+
+Scenario – the playable prompt.
+
+Correct Answer – the action/dose the learner should choose.
+
+Explanation – a concise teaching pearl with an authoritative citation.
+
+Feel free to randomize questions or inject them into any game mechanic; the Markdown is deliberately plain so your code can slice it however you like.
+
+Aspirin
+Difficulty	Scenario	Correct Answer	Explanation
+Easy	54-y o male, crushing chest pain, BP 138/84, no bleeding/allergy. What do you administer en route?	Chew 324 mg (4 × 81 mg) aspirin.	Early ASA decreases mortality in acute coronary syndrome when no contraindication exists. 
+Strems Council
+Medium	Same patient took 325 mg ASA 20 min ago at home. Next step?	Do not repeat aspirin; document prior dose.	A single 160–325 mg pre-hospital dose suffices; extra dosing ↑ bleeding risk without added benefit. 
+Strems Council
+Hard	68-y o on warfarin, tarry stool yesterday, suspected MI. Administer ASA?	Withhold and consult OLMC.	Active/possible GI bleed on anticoagulation is a protocol contraindication. 
+Strems Council
+
+Albuterol
+Difficulty	Scenario	Correct Answer	Explanation
+Easy	Adult asthma flare, wheezes, SpO₂ 91%. First-line med/dose?	2.5 mg albuterol nebulized in 3 mL NS.	Standard EMS neb dose for bronchospasm. 
+Chicago EMS
+Medium	No relief after first neb. How soon can you repeat?	Immediately—start a second/continuous neb.	Back-to-back nebs are permitted in severe asthma. 
+Chicago EMS
+Hard	COPD pt. on β-blocker, HR 140 after neb. What adverse effect are you watching?	Tachycardia/palpitations from β₂-agonism.	Albuterol can provoke reflex tachycardia, especially with underlying β-blockade. 
+Chicago EMS
+
+Amiodarone
+Difficulty	Scenario	Correct Answer	Explanation
+Easy	VF arrest after 2nd shock. Drug/dose?	300 mg IV/IO bolus amiodarone.	First anti-arrhythmic for shock-refractory VF/pVT. 
+Learn & Master ACLS/PALS
+Medium	ROSC achieved; perfusing VT recurs. Infusion?	150 mg over 10 min IV; may repeat once.	ACLS slow-infusion dose for unstable VT w/ pulse. 
+Learn & Master ACLS/PALS
+Hard	Pediatric 20 kg pulseless VT. Dose?	5 mg/kg (100 mg) IV; may repeat once.	Pediatric bolus is 5 mg/kg (max 300 mg). 
+Learn & Master ACLS/PALS
+
+Atropine
+Difficulty	Scenario	Correct Answer	Explanation
+Easy	Symptomatic adult bradycardia HR 32, BP 78/40. Initial atropine?	1 mg IV push.	ACLS first-dose for unstable bradycardia. 
+cpr.heart.org
+Medium	After 3 mg total atropine no change. Next pharmacologic option?	Dopamine infusion or transcutaneous pacing.	3 mg is the ACLS ceiling; move to second-line therapy. 
+cpr.heart.org
+Hard	Heart-transplant pt. with bradycardia. Use atropine?	No—pace immediately.	Denervated hearts often don’t respond to vagolytics. 
+cpr.heart.org
+
+Dextrose (D50)
+Difficulty	Scenario	Correct Answer	Explanation
+Easy	Adult BGL 28 mg/dL, IV established. Dose?	25 g D50 (50 mL of 50%).	Standard EMS treatment for profound hypoglycemia. 
+Aliem
+Medium	IV infiltrates mid-push; pt. still altered. What now?	Start new IV or give IM glucagon.	Dextrose requires a patent IV; glucagon is alternative. 
+Aliem
+Hard	Chronic alcoholic, suspected thiamine deficiency, BGL 40. Sequence?	Thiamine 100 mg IV, then dextrose.	Prevents Wernicke’s encephalopathy precipitated by glucose load. 
+Aliem
+
+Diazepam
+Difficulty	Scenario	Correct Answer	Explanation
+Easy	34-y o in generalized seizure ≥ 5 min. IV dose?	5 mg slow IV (2.5-5 mg).	EMS standard for status epilepticus. 
+Jersey Community Hospital
+Medium	No IV access. Alternate route/dose?	10 mg rectal gel (Diastat).	Rectal diazepam delivers up to 10 mg when IV unavailable. 
+Jersey Community Hospital
+Hard	Post-ictal BP 88/56, RR 8 after 10 mg. Management?	Support airway/ventilation; monitor—avoid flumazenil pre-hospital.	Benzos depress respirations; airway is priority. 
+Jersey Community Hospital
+
+Diphenhydramine
+Difficulty	Scenario	Correct Answer	Explanation
+Easy	Mild urticaria, stable vitals. Adult dose?	25–50 mg IM or 25 mg slow IV.	Standard antihistamine range. 
+Summa Health
+Medium	22 kg child with hives. Dose?	1 mg/kg ≈ 22 mg IV/IM.	Pediatric dose is 1 mg/kg. 
+Summa Health
+Hard	Anaphylaxis: epi given, BP 80/40. When give Benadryl?	After epinephrine and airway secured; 50 mg IV.	Epi is first-line; diphenhydramine is adjunct. 
+Summa Health
+
+Epinephrine 1:1 000 (IM)
+Difficulty	Scenario	Correct Answer	Explanation
+Easy	Adult anaphylaxis, stridor, BP 96/60. Dose?	0.3 mg IM in lateral thigh.	First-line life-saving treatment. 
+NCBI
+Medium	5-y o (20 kg) anaphylaxis. Dose?	0.2 mg IM (0.01 mg/kg).	Weight-based pediatric rule. 
+NCBI
+Hard	Two IM doses no response, BP 70/40. Next step?	IV epinephrine infusion or 1:10 000 slow IV per OLMC.	Refractory shock may need IV route. 
+NCBI
+
+Epinephrine 1:10 000 (IV/IO)
+Difficulty	Scenario	Correct Answer	Explanation
+Easy	Adult asystole. Dose/timing?	1 mg IV/IO q 3-5 min.	ACLS cardiac-arrest standard. 
+Learn & Master ACLS/PALS
+Medium	Adult anaphylactic shock with IV access. IV dose?	0.3–0.5 mg slow IV (3–5 mL 1:10 000).	Diluted epi for anaphylaxis when IV route chosen. 
+Learn & Master ACLS/PALS
+Hard	Pediatric arrest 15 kg. Dose?	0.15 mg IV (0.01 mg/kg).	Weight-based pediatric dosing. 
+Learn & Master ACLS/PALS
+
+Fentanyl
+Difficulty	Scenario	Correct Answer	Explanation
+Easy	Closed femur fracture pain 8/10. IV access. Dose?	50 mcg slow IV (25–100 mcg).	Fast-acting opioid analgesia. 
+County of San Diego
+Medium	After 100 mcg total, pain 6/10, BP 100/60. Repeat?	25 mcg IV; titrate with caution (max 200 mcg).	Monitor for opioid-induced hypotension. 
+County of San Diego
+Hard	18 kg pediatric burn, intranasal route. Dose?	≈ 54 mcg IN (3 mcg/kg).	IN fentanyl 1-4 mcg/kg; split between nares. 
+County of San Diego
+
+Glucagon
+Difficulty	Scenario	Correct Answer	Explanation
+Easy	Adult hypoglycemia, no IV, BGL 38. Dose?	1 mg IM glucagon.	IM glucagon raises glucose when IV dextrose unavailable. 
+Glucagon Emergency Kit
+Medium	Suspected β-blocker OD, HR 38, BP 70/40. Role/dose?	3-5 mg IV bolus; may repeat.	High-dose glucagon reverses β-blockade bradycardia. 
+Glucagon Emergency Kit
+Hard	25 kg child hypoglycemic seizure. Dose?	0.5 mg IM (≈ 0.02 mg/kg).	Pediatric weight-based dosing. 
+Glucagon Emergency Kit
+
+Oral Glucose
+Difficulty	Scenario	Correct Answer	Explanation
+Easy	Alert diabetic, BGL 55, able to swallow. Treatment?	15–20 g oral glucose gel.	Follows ADA “15 g, wait 15 min” rule. 
+Verywell Health
+Medium	After 15 min BGL 62, still symptomatic. Next?	Repeat 15 g oral glucose.	Continue until > 70 mg/dL & symptoms improve. 
+Verywell Health
+Hard	Semi-alert pt. gag reflex weak. Give gel?	No—risk aspiration; secure airway & give IV dextrose.	Oral glucose only if patient can self-administer safely. 
+Verywell Health
+
+Ipratropium Bromide
+Difficulty	Scenario	Correct Answer	Explanation
+Easy	COPD exacerbation after albuterol neb. Add?	0.5 mg ipratropium neb (DuoNeb).	Anticholinergic + β₂ agonist improves airflow. 
+Cleveland Clinic
+Medium	Why not start with ipratropium alone?	Slower onset (15–30 min) vs albuterol (≈5 min).	Albuterol provides rapid bronchodilation. 
+Cleveland Clinic
+Hard	Asthmatic child 3 y o (15 kg) moderate distress. Dose?	0.5 mg neb (same as adult).	Pediatric EMS protocols mirror adult dose. 
+Cleveland Clinic
+
+Lidocaine (IO Pain)
+Difficulty	Scenario	Correct Answer	Explanation
+Easy	Awake pt. after humeral IO; infusion painful. Dose?	40 mg (2 mL 2%) slow IO.	Lidocaine attenuates IO infusion pain. 
+Teleflex
+Medium	6-y o (24 kg) tibial IO. Dose?	0.5 mg/kg ≈ 12 mg IO.	Pediatric weight-based dosing. 
+Teleflex
+Hard	Pain persists after first lidocaine. Action?	Repeat 20 mg IO; consider systemic opioid.	Repeat dosing is permitted when discomfort continues. 
+Teleflex
+
+Atropine / 2-PAM (Mark-1 Kit)
+Difficulty	Scenario	Correct Answer	Explanation
+Easy	Farmworker w/ SLUDGEM signs after pesticide. Initial kit dose?	Atropine 2 mg + 2-PAM 600 mg IM (1 auto-injector set).	Standard adult Mark-1 contents/dose. 
+Chemh
+Medium	Symptoms worsen 5 min later. Next action?	Administer 2nd kit (total 4 mg atropine).	Severe exposure may need rapid stacking up to 6 mg atropine. 
+Chemh
+Hard	18 kg child, moderate symptoms. How many pediatric kits?	2 mg atropine total (≈ 1 mg per injector × 2).	Pediatric weight tables: moderate exposure ≈ 2 mg atropine. 
+EMS.gov
+
+Morphine
+Difficulty	Scenario	Correct Answer	Explanation
+Easy	Crush-injury pain 9/10, BP 130/84. IV dose?	2–5 mg slow IV.	Initial EMS analgesic range. 
+WVOEMS
+Medium	After 10 mg total, BP 88/54. What now?	Stop morphine, give fluids, monitor.	Opioid vasodilation can drop BP; treat hypotension first. 
+WVOEMS
+Hard	STEMI pt. already on nitro; still pain. Why might you prefer fentanyl?	Less hypotension, faster onset than morphine.	Many protocols favor fentanyl to avoid morphine-induced hypotension in MI. 
+Effective Healthcare
+
+Naloxone
+Difficulty	Scenario	Correct Answer	Explanation
+Easy	Unresponsive, pinpoint pupils, RR 4. First dose/route?	2 mg IN (1 mg per naris).	IN naloxone is effective and easy for BLS/ALS. 
+EMS.gov
+Medium	After 0.4 mg IV pt. rouses then agitated. Next?	Titrate 0.1 mg increments only if RR < 10.	Goal is adequate ventilation, avoid full withdrawal. 
+EMS1
+Hard	Chronic opioid user OD—why avoid large bolus reversal?	Prevent acute withdrawal, catecholamine surge, pulmonary edema.	Rapid complete reversal carries significant risks. 
+DHS
+
+Nitroglycerin
+Difficulty	Scenario	Correct Answer	Explanation
+Easy	Chest-pain pt., BP 140/90, no ED drugs. Dose?	0.4 mg SL tablet/spray, may repeat q 5 min × 3.	Standard pre-hospital nitro use. 
+EMS1
+Medium	Pt. took sildenafil 4 hrs ago. Give nitro?	Contraindicated—withhold nitro.	PDE-5 inhibitors + nitro → severe hypotension. 
+UCHealth
+Hard	Pulmonary edema, SBP 220. Three nitro doses minimal effect. OLMC suggestion?	High-dose/IV nitro drip under medical control.	High-dose nitro used for hypertensive pulmonary edema. 
+Fresno County
+
+Ondansetron
+Difficulty	Scenario	Correct Answer	Explanation
+Easy	Adult nausea/vomiting. Dose/route?	4 mg slow IV (or ODT).	First-line antiemetic; may repeat once. 
+rivcoready.org
+Medium	4-y o (20 kg) vomiting. Dose?	0.1 mg/kg ≈ 2 mg IV/IM.	Pediatric weight-based rule. 
+rivcoready.org
+Hard	Why use caution if prolonged QT on ECG?	Ondansetron can prolong QT, risking torsades.	ECG monitoring advised in high-risk pts. 
+Summa Health
+
+Oxygen
+Difficulty	Scenario	Correct Answer	Explanation
+Easy	COPD pt. SpO₂ 88% RA. What flow/device?	2 L/min NC titrated to 90-94%.	Avoid hyperoxia; COPD target 88-92%. 
+NCBI
+Medium	Multi-system trauma, SpO₂ 92%. Preferred delivery?	15 L/min NRB (high-flow O₂).	Major trauma protocols call for high-flow oxygen. 
+NHSAAA Medicines
+Hard	When might HFNC be superior to NRB?	Acute hypoxemic respiratory failure needing sustained FiO₂ & low-level PEEP.	HFNC improves comfort & oxygenation in select pts. 
+PMC
+
+Sodium Bicarbonate
+Difficulty	Scenario	Correct Answer	Explanation
+Easy	Suspected TCA overdose, wide QRS. Dose?	1 mEq/kg IV push.	Alkalinization narrows QRS & treats arrhythmias. 
+DHS
+Medium	Hyperkalemic arrest following crush injury. Why bicarb?	Buffers acidosis & shifts K⁺ intracellularly, stabilizing myocardium.	Temporizing measure until definitive K⁺ therapy. 
+DHS
+Hard	Risks of routine bicarb in prolonged cardiac arrest?	Hypernatremia, metabolic alkalosis, ↓ O₂ off-loading; use only when indicated.	Routine use offers no survival benefit and may harm. 
+DHS
+
+End of file

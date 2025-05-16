@@ -1,0 +1,27 @@
+EMT-I PHARM GAME OVERVIEW
+
+This will be an interactive game to help study the medications that will be learned in an EMT-I program.
+The game should be able to be played in a in a local host web browser (its only for personal use).
+
+The games should be interactive and progress from easy to hard as the player gets more answers correct. Use a mixture of multiple choice questions, "Select all that apply", and fill in the blank style questions.  The player should select their answer and then hit a submit button to see if they got it right.
+
+The games should have an 8 bit style (similar to oldschool Zelda) but should feature a progress bar 
+PROGRESS BAR details: An 8bit Ambulance should travel accross the progress bar on its way to an 8bit hospital at the end of the progress bar.  The ambulance should have a slight bouncing animation to add some visual movement to the screen.
+
+Question difficulty progression should follow this rough logic:
+If the player get 2 or 3 answers correct in a row then they should progress to the next difficulty level. if they get 2 questions wrong at that difficulty level they they should go back down a level.  Lower level questions should be scattered in to keep it from getting too consistently difficult.
+
+
+If an answer is wrong, show a helpful explanation to help with learning.  The game should have 20 questions total and should be replayable.
+
+The game should have a sense of storytelling to help keep it engaging and fun.  
+
+Use the file "Scenario Question Bank" as a good starting point for potential questions, but also feel free to spice it up to help build a more interactive and interesting game that still helps to learn these medication and the scenarios they should be given in.
+
+
+Examples of question types:
+
+Dosing questions
+Drug Classification questions
+Contraindication questions
+

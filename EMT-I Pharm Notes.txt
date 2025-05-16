@@ -1,0 +1,89 @@
+EMT-I Pharm Notes
+Note: OLMC = Online Medical Control
+
+Aspirin (NSAID)
+Adults: Chew 324 mg (81 mg x 4 tablets)
+Contraindications: Bleeding, bleeding disorders, allergies
+Peds: Adult only
+Albuterol (Bronchodilator)
+Adults: Nebulized 2.5 mg (0.5 mL of 0.5% solution) diluted to 3 mL normal saline (0.083% solution) over 5-15 minutes, or 8-10 puffs via metered-dose inhaler (MDI)
+Peds: Same as adults
+Amiodarone (Antiarrhythmic)
+Cardiac arrest only
+Adults: 300 mg rapid IV bolus dose, followed once by 150 mg dose in 3-5 minutes
+Peds: 5 mg/kg rapid IV bolus dose, followed once by 5 mg/kg dose in 5 minutes
+Atropine (Anticholinergic)
+With OLMC only
+Adult bradycardia: 1 mg IV/IO push, repeat every 3-5 minutes (maximum dose of 3 mg)
+Peds bradycardia: 0.02 mg/kg IV/IO (0.1 mg minimum/1.0 mg maximum), repeat in 5 minutes for a maximum dose of 0.04 mg/kg
+Adult anticholinergic poisoning: 1-2 mg IV/IO push every 5-15 minutes until effects occur
+Peds anticholinergic poisoning: 0.02 mg/kg IV/IO (0.1 mg minimum/1.0 mg maximum), repeat in 5-15 minutes until effects occur
+Dextrose (Carbohydrate)
+Adults: Infuse D50W premixed 250 mL bag—titrate to patient response/condition.
+Peds: Same as adults.
+Diazepam (Valium - Benzodiazepine)
+With OLMC only
+Adults: 2.5-5 mg slow IV/IO, IM (5-10 minutes to maximum 10 mg), or 0.2 mg/kg per rectum to maximum 10 mg
+Infants (30 days-5 years): 0.1 mg/kg slow IV/IO/IM push (5-10 minutes to maximum 5 mg), or 0.2 mg/kg per rectum to maximum 10 mg
+Diphenhydramine (Antihistamine)
+Adults: 25-50 mg IM or slow IV/IO
+Peds: 1.25 mg/kg dose IV/IM/IO
+Epinephrine 1:1,000 (Sympathomimetic)
+Adults: Autoinjector 0.3 mg IM dose, or 0.3 mg (0.3 mL) IM. May repeat every 5 minutes.
+Peds: Autoinjector 0.15 mg IM dose, or 0.01 mg/kg IM. May repeat every 5 minutes.
+
+Epinephrine 1:10,000 (Sympathetic Agonist)
+Adult Cardiac Arrest: 1 mg (10 mL) rapid IV push every 3-5 min PRN (as needed)
+Adult Anaphylaxis: 0.3-0.5 mg (3-5 mL) slow IV/IO push, repeat 5-20 min PRN
+Peds Cardiac Arrest: 0.01 mg/kg (0.1 mL/kg) IV/IO push every 5 min PRN
+Peds Anaphylaxis: 0.01 mg/kg (0.1 mL/kg) (max 3 mL) slow IV/IO push. Repeat every 5-20 min PRN
+Fentanyl (Synthetic Opioid Agonist)
+Standing Order: 1st dose up to 100 mcg
+Adults: 25-100 mcg slow IV/IO/IM/IN every 5-15 min for pain
+Peds: 1-4 mcg/kg slow IV/IO/IM/IN every 5-15 min for pain
+Glucagon (Insulin Agonist)
+Adult Hypoglycemia: 2 mg IM, repeat 7-10 min
+Calcium-Channel Blocker or Beta-Blocker Toxicity: 2 mg IV → may require higher doses
+Peds Hypoglycemia: 0.25-1 mg IM
+Oral Glucose (Carbohydrate)
+Adults: 10-20 g, repeated in 10 mins if needed. Check BGL (Blood Glucose Level)
+Peds: 10-20 g, check BGL
+Ipratropium Bromide (Muscarinic Antagonist)
+Adult: 500 mcg (one unit dose vial) nebulizer
+Peds: 500 mg (one unit dose vial) nebulizer
+EMT-I Dose Only
+Lidocaine (Antiarrhythmic/Local Anesthetic)
+Adult Pain Control: 60 mg (6 mL) 10 Flush for pain control.
+Peds Pain Control: 0.5 mg/kg 10 Flush for pain control PRN.
+Atropine/2-PAM Injectors (Organophosphate Poisoning)
+Mark-1 Kit
+Symptoms: Salivation, Lacrimation, Urination, Defecation, Gastrointestinal Upset (GI), Emesis, Muscular Twitching
+Treatment (OLMC Required at this point):
+Adult: Severe: 6 mg stacks. Moderate: 4 mg stacks. Mild: 2 mg.
+Peds: Severe: 4 mg stacks. Moderate: 2 mg stacks. Mild: 1 mg.
+Morphine (Narcotic)
+OLMC Only
+Adults: 2-5 mg slow IV/IO or 5-10 mg IM, every 5-15 min. May be repeated per OLMC.
+Peds: 0.1 mg/kg slow IV/IO/IM, every 5-15 min.
+Naloxone (Narcotic Antagonist)
+Adults: 0.4-2.0 mg IM/IN/IO
+IN Only: 2 mg (1 mg per nostril)
+Peds: 0.1 mg/kg. Max dose 1 mg IV/IO. 2 mg → 1 mg/nostril
+
+Nitroglycerin (Anti-anginal / Vasodilator)
+Adults: (1) tablet (0.4 mg) or metered spray (1) may be repeated in 5 minutes up to 3 doses
+Peds: Contraindicated
+Ondansetron (Antiemetic)
+Adults: 4 mg slow IV/IO/IM; may repeat x1 PRN (as needed). Consider diphenhydramine (Benadryl) after.
+OR 4-8 mg sublingual
+Peds (1-12 years): 0.1 mg/kg slow IV/IO/IM
+Peds (7-12 years): Use adult IM/IO/IV
+OR 4 mg SL (sublingual) tablet
+1/2 oral tab (2 mg): For peds 1-4 years
+Oxygen (Gas)
+Adults: Low 1-6 LPM (Liters Per Minute) via Nasal Cannula (NC) or High 10-15 LPM via Non-Rebreather Bag (NRB) or Bag-Valve Mask (BVM)
+Peds: Low 1-6 LPM via Nasal Cannula (NC) or High 10-15 LPM via Non-Rebreather Bag (NRB) or Bag-Valve Mask (BVM)
+Sodium Bicarbonate (Alkalinizing Agent)
+OLMC Required
+Adult: 1 mEq/kg IV; repeat with 0.5 mEq/kg every 10 minutes
+Peds: Same as adult; infuse slowly with adequate ventilations
