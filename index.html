@@ -6,39 +6,8 @@
     <title>EMT-I PHARM Game</title>
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
-    <style>
-        /* Test styles for direct image display */
-        .test-icons {
-            display: flex;
-            justify-content: center;
-            gap: 20px;
-            margin: 20px 0;
-        }
-        .test-ambulance {
-            width: 120px;
-            height: 80px;
-            background-image: url("AmbulanceIcon.png");
-            background-repeat: no-repeat;
-            background-size: contain;
-        }
-        .test-hospital {
-            width: 80px;
-            height: 80px;
-            background-image: url("HospitalIcon.png");
-            background-repeat: no-repeat;
-            background-size: contain;
-            background-color: rgba(255, 255, 255, 0.3);
-            border-radius: 50%;
-        }
-    </style>
 </head>
 <body>
-    <!-- Test icons display outside main container -->
-    <div class="test-icons">
-        <div class="test-ambulance"></div>
-        <div class="test-hospital"></div>
-    </div>
-    
     <div id="game-container">
         <div id="title-screen">
             <h1>EMT-I PHARM GAME</h1>
@@ -54,10 +23,8 @@
 
             <div id="progress-container" style="position: relative; height: 50px; overflow: visible; margin: 20px 0; background-color: #000; border: 4px solid #444; padding: 4px;">
                 <div id="progress-bar"></div>
-                <!-- Direct image elements for ambulance and hospital icons -->
+                <!-- Direct image element for ambulance icon -->
                 <img id="ambulance" src="AmbulanceIcon.png" alt="Ambulance" style="position: absolute; width: 120px; height: 80px; top: 50%; transform: translateY(-50%); left: 5px; transition: left 0.5s; z-index: 5; object-fit: contain;">
-                <div style="position: absolute; width: 70px; height: 70px; background-color: rgba(255, 255, 255, 0.3); border-radius: 50%; right: 0; top: 50%; transform: translateY(-50%); z-index: 3;"></div>
-                <img id="hospital" src="HospitalIcon.png" alt="Hospital" style="position: absolute; width: 60px; height: 60px; top: 50%; transform: translateY(-50%); right: 5px; z-index: 4; object-fit: contain;">
                 
                 <!-- Road with dashed line -->
                 <div style="position: absolute; top: 50%; left: 0; right: 0; height: 30px; background-color: #333; transform: translateY(-50%); z-index: 1;"></div>
@@ -84,11 +51,6 @@
                 <div id="fill-in-blank" class="question-type hidden">
                     <input type="text" id="blank-answer" placeholder="Type your answer...">
                     <button id="submit-blank">Submit</button>
-                </div>
-
-                <div id="term-matching" class="question-type hidden">
-                    <div id="terms-container"></div>
-                    <div id="definitions-container"></div>
                 </div>
             </div>
 

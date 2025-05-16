@@ -134,19 +134,6 @@ button:active {
     object-fit: contain;
 }
 
-/* Hospital at end of progress bar */
-#hospital {
-    position: absolute;
-    width: 60px;
-    height: 60px;
-    top: 50%;
-    transform: translateY(-50%);
-    right: 5px;
-    z-index: 4;
-    image-rendering: pixelated;
-    object-fit: contain;
-}
-
 /* Scenario and Question Containers */
 #scenario-container {
     background-color: #000;
@@ -219,40 +206,6 @@ button:active {
     background-color: #000;
     color: #fff;
     border: 2px solid #5bf;
-}
-
-/* Term Matching */
-#term-matching {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-}
-
-#terms-container, #definitions-container {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 10px;
-}
-
-.term, .definition {
-    background-color: #333;
-    border: 2px solid #5bf;
-    padding: 10px;
-    cursor: pointer;
-    text-align: left;
-    font-size: 13px;
-}
-
-.term.selected, .definition.selected {
-    background-color: #5bf;
-    color: #000;
-}
-
-.term.matched, .definition.matched {
-    background-color: #0a0;
-    border-color: #0a0;
-    color: #fff;
-    cursor: default;
 }
 
 /* Feedback Container */
@@ -373,7 +326,7 @@ button:active {
 }
 
 /* Submit buttons for question types */
-#submit-select-all, #submit-blank, #submit-multiple-choice, #submit-term-matching {
+#submit-select-all, #submit-blank, #submit-multiple-choice {
     display: block;
     width: 100%;
     max-width: 200px;
@@ -388,7 +341,7 @@ button:active {
     transition: all 0.1s;
 }
 
-#submit-select-all:hover, #submit-blank:hover, #submit-multiple-choice:hover, #submit-term-matching:hover {
+#submit-select-all:hover, #submit-blank:hover, #submit-multiple-choice:hover {
     background-color: #f77;
     transform: translate(-1px, -1px);
     box-shadow: 4px 4px 0 #000;
