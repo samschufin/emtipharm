@@ -13,6 +13,7 @@
             <h1>EMT-I PHARM GAME</h1>
             <p>Test your EMT-I medication knowledge!</p>
             <button id="start-button">START GAME</button>
+            <div id="debug-info" style="margin-top: 20px; font-size: 12px; color: #666;"></div>
         </div>
 
         <div id="game-screen" class="hidden">
@@ -70,26 +71,78 @@
         </div>
     </div>
 
-    <!-- Diagnostic script -->
+    <!-- Advanced diagnostic script -->
     <script>
+    // Global error handler
     window.onerror = function(message, source, lineno, colno, error) {
-        alert('Error: ' + message + '\nAt: ' + source + ' line ' + lineno);
+        const debugInfo = document.getElementById('debug-info');
+        if (debugInfo) {
+            debugInfo.innerHTML += `<p style="color: red;">Error: ${message}<br>At: ${source} line ${lineno}</p>`;
+        }
         console.error('Error details:', error);
         return true;
     };
 
+    // Execute when DOM is fully loaded
     document.addEventListener('DOMContentLoaded', function() {
-        // Debug helper for start button
-        console.log('DOM loaded - debugging setup');
+        const debugInfo = document.getElementById('debug-info');
+        debugInfo.innerHTML = '<p>Diagnostic info:</p>';
+        
+        // Check if start button exists
         const startBtn = document.getElementById('start-button');
         if (startBtn) {
-            console.log('Start button found');
-            startBtn.addEventListener('click', function() {
-                console.log('Start button clicked');
+            debugInfo.innerHTML += '<p>✓ Start button found</p>';
+            
+            // Add our own click handler to test if clicks are being registered
+            startBtn.addEventListener('click', function(e) {
+                debugInfo.innerHTML += '<p>✓ Start button clicked</p>';
+                
+                // Check if questionBank exists
+                if (typeof questionBank !== 'undefined') {
+                    debugInfo.innerHTML += `<p>✓ Question bank found with ${questionBank.length} questions</p>`;
+                    
+                    // Check a sample question to make sure structure is correct
+                    if (questionBank.length > 0) {
+                        const sampleQ = questionBank[0];
+                        debugInfo.innerHTML += `<p>✓ Sample question: ${sampleQ.drug} (${sampleQ.difficulty})</p>`;
+                    }
+                } else {
+                    debugInfo.innerHTML += '<p style="color: red;">✗ Question bank not found! Check if questions.js is loading correctly</p>';
+                }
+                
+                // Check if the startGame function exists and has run
+                setTimeout(function() {
+                    const titleScreen = document.getElementById('title-screen');
+                    const gameScreen = document.getElementById('game-screen');
+                    
+                    if (titleScreen.classList.contains('hidden')) {
+                        debugInfo.innerHTML += '<p>✓ Game has started (title screen hidden)</p>';
+                    } else {
+                        debugInfo.innerHTML += '<p style="color: red;">✗ Game did not start (title screen still visible)</p>';
+                    }
+                    
+                    if (!gameScreen.classList.contains('hidden')) {
+                        debugInfo.innerHTML += '<p>✓ Game screen is visible</p>';
+                    } else {
+                        debugInfo.innerHTML += '<p style="color: red;">✗ Game screen is still hidden</p>';
+                    }
+                }, 500);
             });
         } else {
-            console.error('Start button not found!');
+            debugInfo.innerHTML += '<p style="color: red;">✗ Start button not found!</p>';
         }
+        
+        // Check if scripts are loaded
+        const scripts = document.querySelectorAll('script');
+        debugInfo.innerHTML += `<p>Found ${scripts.length} script tags</p>`;
+        
+        scripts.forEach((script, index) => {
+            if (script.src) {
+                debugInfo.innerHTML += `<p>Script ${index+1}: ${script.src}</p>`;
+            } else {
+                debugInfo.innerHTML += `<p>Script ${index+1}: inline script</p>`;
+            }
+        });
     });
     </script>
 
