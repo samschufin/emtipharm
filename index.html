@@ -70,6 +70,29 @@
         </div>
     </div>
 
+    <!-- Diagnostic script -->
+    <script>
+    window.onerror = function(message, source, lineno, colno, error) {
+        alert('Error: ' + message + '\nAt: ' + source + ' line ' + lineno);
+        console.error('Error details:', error);
+        return true;
+    };
+
+    document.addEventListener('DOMContentLoaded', function() {
+        // Debug helper for start button
+        console.log('DOM loaded - debugging setup');
+        const startBtn = document.getElementById('start-button');
+        if (startBtn) {
+            console.log('Start button found');
+            startBtn.addEventListener('click', function() {
+                console.log('Start button clicked');
+            });
+        } else {
+            console.error('Start button not found!');
+        }
+    });
+    </script>
+
     <script src="questions.js"></script>
     <script src="game.js"></script>
 </body>
